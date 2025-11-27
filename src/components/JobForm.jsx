@@ -34,7 +34,7 @@ export default function JobForm({ onSubmit }) {
 
       <Input label="Title" value={form.title} onChange={(v) => update("title", v)} />
       <Input label="Location" value={form.location} onChange={(v) => update("location", v)} />
-      <Input label="Seniority" value={form.seniority} onChange={(v) => update("seniority", v)} />
+      <Input label="Experience" value={form.seniority} onChange={(v) => update("seniority", v)} />
 
       <Input
         label="Must-have Technologies (comma separated)"
