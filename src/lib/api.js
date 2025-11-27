@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "https://server-sable-ten-44.vercel.app/";
+const API_BASE = "https://server-sable-ten-44.vercel.app";
 
 /* ---------------------------
    GITHUB PROFILE ANALYSIS
