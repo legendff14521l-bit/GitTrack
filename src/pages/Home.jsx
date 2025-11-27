@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 const EXAMPLE_USERS = ["vercel", "octocat", "sindresorhus"];
-
 export default function Home() {
   const [username, setUsername] = useState("");
   const [result, setResult] = useState(null);
@@ -29,10 +28,9 @@ export default function Home() {
     setStatus("loading");
     setError("");
     setResult(null);
-
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/analyze/${name.trim()}`
+        `https://server-sable-ten-44.vercel.app/api/analyze/${name.trim()}`
       );
       setResult(res.data);
       setStatus("loaded");
