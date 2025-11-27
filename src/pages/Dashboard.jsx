@@ -31,7 +31,7 @@ export default function Home() {
     setResult(null);
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/analyze/${name.trim()}`
+        `https://server1-nine-mu.vercel.app/api/analyze/${name.trim()}`
       );
       setResult(res.data);
       setStatus("loaded");
